@@ -19,7 +19,7 @@
 
 <!--navbar links-->     
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-   <a class="navbar-brand" href="#">Moryba Data Dashboard</a>
+   <a class="navbar-brand" href="#">Pulkit's Data Visualizer</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" 
   data-target="#navbarTogglerDemo02" 
   aria-controls="navbarTogglerDemo02" aria-expanded="false" 
@@ -30,7 +30,7 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
       <li class="nav-item">
-        <a class="nav-link" href="https://medium.com/@moryba.kouate">My articles on Medium</a>
+        <a class="nav-link" href="https://PulkitSinghDev.github.io">About me</a>
       </li>
     </ul>
   </div>
@@ -41,10 +41,6 @@
 
     <!--social media buttons column-->      
     <div class="col-1 border-right">
-        <div id="follow-me" class="mt-3">
-            <a href="https://twitter.com/pulkitsinghdev">
-                <img src="https://github.com/PulkitSinghDev/PulkitSinghDev/raw/main/twitter.svg" alt="twitter" class="img-fluid mb-4 ml-2">
-            </a>
             <a href="https://github.com/pulkitsinghdev">
                 <img src="/static/img/githublogo.png" alt="github" class="img-fluid ml-2">
             </a>
@@ -68,10 +64,10 @@
             <!--top two charts-->       
             <div class="row">
                 <div class="col-6">
-                    <div id="{{ids[0]}}"></div>
+                    <div id="figure-0"></div>
                 </div>
                 <div class="col-6">
-                    <div id="{{ids[1]}}"></div>
+                    <div id="figure-1"></div>
                 </div>
             </div>
 
@@ -79,12 +75,12 @@
             <div class="row mb-6">
                 <div class="col-6"> 
                     <div id="chart3">
-                        <div id="{{ids[2]}}"></div>
+                        <div id="figure-2"></div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div id="chart4">
-                        <div id="{{ids[3]}}"></div>
+                        <div id="figure-3"></div>
                     </div>
                 <div>
             </div>
@@ -104,8 +100,8 @@
     <script type="text/javascript">
         // plots the figure with id
         // id much match the div id above in the html
-        var figures = {{figuresJSON | safe}};
-        var ids = {{ids | safe}};
+        var figures = [{"data": [{"mode": "lines", "x": [0, 1, 2, 3, 4, 5], "y": [0, 2, 4, 6, 8, 10], "type": "scatter"}], "layout": {"title": "Chart One", "xaxis": {"title": "x-axis label"}, "yaxis": {"title": "y-axis label"}}}, {"data": [{"x": ["a", "b", "c", "d", "e"], "y": [12, 9, 7, 5, 1], "type": "bar"}], "layout": {"title": "Chart Two", "xaxis": {"title": "x-axis label"}, "yaxis": {"title": "y-axis label"}}}, {"data": [{"mode": "lines", "x": [5, 4, 3, 2, 1, 0], "y": [0, 2, 4, 6, 8, 10], "type": "scatter"}], "layout": {"title": "Chart Three", "xaxis": {"title": "x-axis label"}, "yaxis": {"title": "y-axis label"}}}, {"data": [{"mode": "markers", "x": [20, 40, 60, 80], "y": [10, 20, 30, 40], "type": "scatter"}], "layout": {"title": "Chart Four", "xaxis": {"title": "x-axis label"}, "yaxis": {"title": "y-axis label"}}}];
+        var ids = ['figure-0', 'figure-1', 'figure-2', 'figure-3'];
         for(var i in figures) {
             Plotly.plot(ids[i],
                 figures[i].data,
