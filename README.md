@@ -22,8 +22,8 @@ The link of my webapp: https://moryba-webapp.herokuapp.com/.
 ## Cloud Platform used for deployment: 
 - Heroku
 
-## Additional information
-- Additional information about the project can be found [here.](https://towardsdatascience.com/how-i-developed-my-web-app-for-data-visualization-with-python-93555ad83c2d?source=friends_link&sk=7a5f72db46f702e54d2e90b272b16ac4) 
+## Actuall webpage
+- [Website](/myapp/templates/index.html) 
 
 ## License
 
