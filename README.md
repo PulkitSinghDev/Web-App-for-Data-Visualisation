@@ -3,7 +3,7 @@
 
 This repository contains the files that I used to develop an intereactive Web Application for Data Visualization.
 
-The link of my webapp: https://moryba-webapp.herokuapp.com/.
+The link of my webapp: https://pulkitsinghdev.tech/Web-App-for-Data-Visualisation/myapp/templates/index.html.
 
 ## Languages used to develop the Web App:
 
@@ -23,7 +23,7 @@ The link of my webapp: https://moryba-webapp.herokuapp.com/.
 - Heroku
 
 ## Actuall webpage
-- [Website](/myapp/templates/index.html) 
+- [Website](https://pulkitsinghdev.tech/Web-App-for-Data-Visualisation/myapp/templates/index.html) 
 
 ## License
 
