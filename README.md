@@ -19,8 +19,6 @@ The link of my webapp: https://pulkitsinghdev.tech/Web-App-for-Data-Visualisatio
 - Flask
 ## Front-end framework used:
 - Bootstrap
-## Cloud Platform used for deployment: 
-- Heroku
 
 ## Actuall webpage
 - [Website](https://pulkitsinghdev.tech/Web-App-for-Data-Visualisation/myapp/templates/index.html) 
